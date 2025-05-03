@@ -1,0 +1,135 @@
+/* 🌟 General Reset for Consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 🎮 Game Background with a Gaming Vibe */
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+/* 🏆 Game Title */
+h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #ffcc00;
+    text-shadow: 2px 2px 5px rgba(255, 204, 0, 0.7);
+}
+
+/* 📜 Instructions */
+p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* 🎮 Game Form */
+form {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 90%;
+    margin-top: 10px;
+}
+
+/* 🎯 Input Fields */
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 6px;
+    border: 2px solid #ffcc00;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    text-align: center;
+    transition: 0.3s;
+}
+
+input[type="number"]::placeholder {
+    color: #ddd;
+}
+
+input[type="number"]:focus {
+    border-color: #ffaa00;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* 🎮 Submit Button */
+input[type="submit"] {
+    margin-top: 15px;
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    background: #ffcc00;
+    color: #333;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background: #ffaa00;
+    transform: scale(1.05);
+}
+
+/* 🎯 Score & Chances Display */
+#Score, #Chances {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* 🟡 Default Message (Instructional) */
+#Message {
+    display: block;  /* Ensures visibility */
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff; /* Default color for neutral state */
+}
+
+/* ✅ Success Message */
+.success {
+    color: #00ff00;  /* Green for correct guess */
+    font-weight: bold;
+}
+
+/* ❌ Error Message */
+.error {
+    color: #ff4444;  /* Red for incorrect guess or empty input */
+    font-weight: bold;
+}
+
+/* 🟠 Info Message (Instructional Text) */
+.info {
+    color: #FFA500;  /* Orange for tips/instructions */
+    font-weight: bold;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+    form {
+        padding: 15px;
+    }
+    input[type="number"], input[type="submit"] {
+        font-size: 16px;
+    }
+}
