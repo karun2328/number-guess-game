@@ -20,8 +20,7 @@ This is a simple JavaScript project where the user tries to guess a randomly gen
 1. Clone the repository.
 2. Open `index.html` in your browser.
 
-## Future Improvements
+## Future Improvements  
 
 - Add difficulty levels.
-- Track and display the number of attempts.
 - Add sound effects.
